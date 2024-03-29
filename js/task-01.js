@@ -23,6 +23,33 @@ for (let category of categories) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Explanation:
 
 //     document.querySelectorAll(".item") selects all elements in the HTML document with the class "item" and returns a NodeList containing those elements. This NodeList is stored in the categories variable.
@@ -31,5 +58,3 @@ for (let category of categories) {
 //         category represents each element (category) in the NodeList during each iteration.
 //     console.log(Category: ${category.firstElementChild.innerText}); outputs the name of each category. It uses the firstElementChild property to access the first child element of each category (which should be an <h2> tag) and then retrieves its text content using the innerText property.
 //     console.log(Elements: ${category.firstElementChild.nextElementSibling.children.length}); outputs the number of elements (items) within each category. It first uses firstElementChild.nextElementSibling to access the <ul> element (the next sibling of the <h2> tag), and then it counts the number of child elements (items) within the <ul> element using the children property and its length.
-
-

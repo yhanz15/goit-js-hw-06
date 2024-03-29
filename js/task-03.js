@@ -34,6 +34,37 @@ for (let image of images) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Explanation:
 
 //     The images array contains objects, each representing an image with a url (image source) and alt (alternative text).

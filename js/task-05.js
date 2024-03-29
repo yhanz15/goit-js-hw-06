@@ -27,6 +27,38 @@ inputEl.addEventListener("input", handleInput);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Explanation:
 
 //     The inputEl variable stores a reference to the input element with the id "name-input" in the HTML document.

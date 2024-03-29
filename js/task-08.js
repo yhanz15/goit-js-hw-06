@@ -47,6 +47,42 @@ function onFormSubmit(event) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Explanation:
 
 //     The querySelector() method is used to select the <form> element with the class "login-form" from the HTML document.

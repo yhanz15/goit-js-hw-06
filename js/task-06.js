@@ -37,6 +37,34 @@ inputEl.addEventListener("blur", handleLength);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Explanation:
 
 //     The inputEl variable stores a reference to the input element with the id "validation-input".

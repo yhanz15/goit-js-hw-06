@@ -51,4 +51,28 @@ function createBoxes(amount) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // This script sets up event listeners for the "Create" and "Destroy" buttons. When the "Create" button is clicked, it calls the createBoxes function to generate the specified number of boxes with increasing sizes and random colors. When the "Destroy" button is clicked, it clears the contents of the boxes container.

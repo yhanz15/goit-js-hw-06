@@ -18,6 +18,38 @@ fontSizeControlEl.addEventListener("input", (event) => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Explanation:
 
 //     The querySelector() method is used to select elements from the HTML document based on CSS selectors.

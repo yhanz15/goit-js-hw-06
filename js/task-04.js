@@ -1,36 +1,48 @@
-// Define a variable 'initialValue' and initialize it with the value 0
-let initialValue = 0;
+// Initialize counterValue variable to store the current counter value
+let counterValue = 0;
 
-// Get a reference to the element with the id "value" in the HTML document
-let value = document.getElementById("value");
+// Get references to the counter elements
+const valueElement = document.getElementById("value");
+const incrementButton = document.querySelector('[data-action="increment"]');
+const decrementButton = document.querySelector('[data-action="decrement"]');
 
-// Set the inner text of the 'value' element to the initial value
-value.innerText = initialValue;
+// Update the interface with the initial counter value
+valueElement.textContent = counterValue;
 
-// Get references to the buttons with data-action attributes "increment" and "decrement"
-let incBtn = document.querySelector('[data-action="increment"]');
-let decBtn = document.querySelector('[data-action="decrement"]');
+// Add event listeners to the increment and decrement buttons
+incrementButton.addEventListener("click", () => {
+  // Increase counterValue by 1 when increment button is clicked
+  counterValue++;
+  // Update the interface with the new counter value
+  valueElement.textContent = counterValue;
+});
 
-// Add an onclick event handler to the increment button
-incBtn.onclick = function () {
-  // When the increment button is clicked, increase the 'initialValue' by 1
-  initialValue += 1;
+decrementButton.addEventListener("click", () => {
+  // Decrease counterValue by 1 when decrement button is clicked
+  counterValue--;
+  // Update the interface with the new counter value
+  valueElement.textContent = counterValue;
+});
 
-  // Update the inner text of the 'value' element to reflect the new value
-  value.innerText = initialValue;
-};
 
-// Add an onclick event handler to the decrement button
-decBtn.onclick = function () {
-  // When the decrement button is clicked, check if the 'initialValue' is greater than 0
-  if (initialValue > 0) {
-    // If 'initialValue' is greater than 0, decrease it by 1
-    initialValue -= 1;
 
-    // Update the inner text of the 'value' element to reflect the new value
-    value.innerText = initialValue;
-  }
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -38,12 +50,8 @@ decBtn.onclick = function () {
 
 // Explanation:
 
-//     initialValue is a variable that holds the initial value of the counter. It's set to 0.
-//     value is a reference to the element with the id "value" in the HTML document. It represents the element where the counter value is displayed.
-//     The innerText property of the value element is set to initialValue, so when the page loads, it displays the initial value (0).
-//     incBtn and decBtn are references to the buttons with data-action attributes "increment" and "decrement", respectively.
-//     An onclick event handler is added to both buttons. When clicked, they execute a function.
-//     When the increment button is clicked (incBtn.onclick), the initialValue is increased by 1, and the updated value is displayed in the value element.
-//     When the decrement button is clicked (decBtn.onclick), it first checks if initialValue is greater than 0. If it is, initialValue is decreased by 1, and the updated value is displayed in the value element. This prevents the counter from going below 0.
-
-
+//     counterValue is a variable that stores the current counter value. It's initialized to 0.
+//     valueElement, incrementButton, and decrementButton are references to the HTML elements for the counter value display (span) and the increment and decrement buttons, respectively.
+//     The initial counter value is displayed in the interface by setting the text content of valueElement.
+//     Event listeners are added to the increment and decrement buttons. When these buttons are clicked, the corresponding event handler functions are executed.
+//     In the event handler functions, counterValue is incremented or decremented accordingly, and then the interface is updated to display the new counter value by setting the text content of valueElement.

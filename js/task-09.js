@@ -26,6 +26,33 @@ colorChangerButton.addEventListener("click", () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Explanation:
 
 //     The getRandomHexColor() function generates a random HEX color code. It returns a string in the format #RRGGBB, where RR, GG, and BB are two-digit hexadecimal numbers representing the red, green, and blue components of the color, respectively.
